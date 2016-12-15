@@ -1,0 +1,28 @@
+body {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.redColor {
+    color: #C40000 !important;
+}
+
+nav.top {
+    background-color: #f2f2f2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+a {
+    color: #999999;
+}
+
+nav.top a, nav.top span {
+    color: #999999;
+    margin: 0 10px 0 10px;
+}
+
+nav.top a:hover {
+    color: #C40000;
+}

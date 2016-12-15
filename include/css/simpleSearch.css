@@ -1,0 +1,61 @@
+div.simpleSearchDiv {
+    background-color: #c40000;
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 1px;
+    height: 40px;
+    display: block;
+}
+
+div.simpleSearchDiv input {
+    height: 34px;
+    width: 225px;
+    border: 1px solid transparent;
+    margin: 2px;
+    outline: none;
+}
+
+div.simpleSearchDiv button {
+    width: 60px;
+    border: 1px solid transparent;
+    background-color: #c40000;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div.searchBelow {
+    margin-top: 3px;
+    margin-left: -20px;
+}
+
+div.searchBelow span {
+    color: #999;
+}
+
+div.searchBelow a {
+    margin: 0px 20px 0px 20px;
+    font-size: 14px;
+}
+
+img.simpleLogo {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    width: 140px;
+}
+
+a {
+    color: #999;
+}
+
+body {
+    font-size: 12px;
+    font-family: Arial;
+}
+
+div.simpleSearchDiv a:hover {
+    text-decoration: none;
+    color: #c40000;
+}
