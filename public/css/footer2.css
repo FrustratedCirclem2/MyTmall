@@ -1,0 +1,44 @@
+div.footer {
+    border-top: 1px solid #e7e7e7;
+    margin: 0;
+}
+
+div.copyright {
+    border-top: 2px solid #c40000;
+    background-color: #000;
+}
+
+div.copyright span.slash {
+    color: #fff;
+}
+
+div.copyright div.white_link a {
+    color: #fff;
+    padding: 0 5px;
+}
+
+div.footer div.copyright div.white_link {
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+div.footer div.license {
+    padding-bottom: 30px;
+    margin-left: 10px;
+}
+
+div.footer div.license span {
+    color: #a4a4a4;
+}
+
+div.footer div.license div.CopyRightYear {
+    color: #686868;
+    margin: 10px 0;
+}
+img.cateye{
+    margin-left: 20px;
+}
+body{
+    font-size: 12px;
+    font-family:Arial;
+}

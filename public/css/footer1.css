@@ -1,0 +1,39 @@
+div.footer{
+    margin: 0;
+    border-top:1px solid #e7e7e7;
+}
+div.foot_ensure{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+div.foot_desc{
+    border-top:1px solid #e7e7e7;
+    padding-top: 30px;
+    margin:0 20px;
+}
+div.foot_desc div.desc_Column{
+    float: left;
+    width: 20%;
+    padding-left: 15px;
+}
+div.foot_desc div.desc_Column span.descColumnTitle{
+    color: #646464;
+    font-weight: bold;
+    font-size: 16px;
+}
+div.foot_desc div.desc_Column a{
+    display: block;
+    padding-top: 3px;
+}
+body{
+    font-size: 12px;
+    font-family:Arial;
+}
+a{
+    color: #999999;
+}
+a:hover{
+    color: #c40000;
+    text-decoration: none;
+}
