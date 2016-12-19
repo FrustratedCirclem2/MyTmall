@@ -9,6 +9,8 @@
     <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div style="height: 50px;"></div>
+<img class="catear" src="../img/catear.png" alt="猫耳朵~\(≧▽≦)/~瞄~">
 <div class="categoryWithCarousel">
     <div class="headbar">
         <div class="head">
@@ -68,4 +70,22 @@
 </div>
 
 </body>
+<script>
+    $(document).ready(function () {
+        var $catear = $('.catear');
+        $('div.rightMenu span').on('mouseenter', function () {
+            var top = $(this).offset().top;
+            var left = $(this).position().left;
+            var width = $(this).css('width');
+            var destLeft = parseInt(left) + 0.5 * parseInt(width);
+            $catear.css('left', destLeft);
+            $catear.css('top', top - 20);
+            $catear.fadeIn(500);
+        });
+
+        $('div.rightMenu span').on('mouseleave',function () {
+            $catear.hide();
+        })
+    })
+</script>
 </html>

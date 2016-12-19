@@ -54,3 +54,8 @@ div.carouselBackgroundDiv{
     background-color: #e8e8e8;
     z-index:-1;
 }
+img.catear{
+    position: absolute;
+    height: 15px;
+    display: none;
+}
