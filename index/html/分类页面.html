@@ -30,7 +30,7 @@
             <tr>
                 <td><input placeholder="请输入" type="text" class="sortBarPrice beginPrice"></td>
                 <td class="grayColumn priceMiddleColumn">-</td>
-                <td><input placeholder="请输入" type="text" class="sortBarPrice beginPrice"></td>
+                <td><input placeholder="请输入" type="text" class="sortBarPrice endPrice"></td>
             </tr>
             </tbody>
         </table>
@@ -200,7 +200,35 @@
 </body>
 <script>
     $(function () {
-        
-    })
+        $('input.sortBarPrice').on('keyup', function () {
+            var unit = $("div.productUnit");
+            var num = $(this).val();
+            if (num == '') {
+                unit.show();
+                return;
+            }
+            num = parseInt(num);
+            console.log('num: ' + num);
+            if (isNaN(num) || (num <= 0)) {
+                num = 1;
+
+            }
+            $(this).val(num);
+
+            var begin = $('input.beginPrice').val();
+            var end = $('input.endPrice').val();
+            if (!isNaN(begin) && !isNaN(end)) {
+                console.log('beginPrice is' + begin + '\n');
+                console.log('endPrice is' + end + '\n');
+                unit.hide();
+                unit.each(function () {
+                    var price = parseInt($(this).attr('price'));
+                    if (price >= begin && price < end) {
+                        $(this).show();
+                    }
+                });
+            }
+        });
+    });
 </script>
 </html>
