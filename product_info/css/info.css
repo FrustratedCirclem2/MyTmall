@@ -75,18 +75,21 @@ div.orginalDiv span.originalPrice {
     text-decoration: line-through;
     color: #333333;
 }
-div.promotionDiv span.promotionPriceYuan{
-    font-family:Arial;
+
+div.promotionDiv span.promotionPriceYuan {
+    font-family: Arial;
     font-size: 18px;
     color: #C40000;
 }
-div.promotionDiv span.promotionPrice{
-    font-family:Arial;
+
+div.promotionDiv span.promotionPrice {
+    font-family: Arial;
     font-size: 30px;
     color: #C40000;
     font-weight: bold;
 }
-div.promotionDiv span.promotionPriceDesc{
+
+div.promotionDiv span.promotionPriceDesc {
     position: relative;
     display: inline-block;
     width: 68px;
@@ -94,13 +97,15 @@ div.promotionDiv span.promotionPriceDesc{
     left: 0;
     top: -10px;
 }
-div.infoInImgAndInfo div.productSaleAndReviewNumber{
-    margin:20px 0;
-    border-top:1px dotted #c9c9c9;
-    border-bottom:1px dotted #c9c9c9;
+
+div.infoInImgAndInfo div.productSaleAndReviewNumber {
+    margin: 20px 0;
+    border-top: 1px dotted #c9c9c9;
+    border-bottom: 1px dotted #c9c9c9;
     padding: 10px;
 }
-div.productSaleAndReviewNumber div{
+
+div.productSaleAndReviewNumber div {
     display: inline-block;
     width: 49%;
     text-align: center;
@@ -108,73 +113,89 @@ div.productSaleAndReviewNumber div{
     color: #999999;
 
 }
-div.infoInImgAndInfo div.productSaleAndReviewNumber div:first-child{
+
+div.infoInImgAndInfo div.productSaleAndReviewNumber div:first-child {
     border-right: 1px solid #e5dfda;
 }
-div.infoInImgAndInfo div.productNumber{
+
+div.infoInImgAndInfo div.productNumber {
     color: #999999;
 }
-div.infoInImgAndInfo span.productNumberSettingSpan{
+
+div.infoInImgAndInfo span.productNumberSettingSpan {
     display: inline-block;
     width: 43px;
     height: 32px;
-    border:1px solid #999999;
-    padding-top:7px;
+    border: 1px solid #999999;
+    padding-top: 7px;
 }
-div.infoInImgAndInfo input.productNumberSetting{
+
+div.infoInImgAndInfo input.productNumberSetting {
     border: none;
     height: 80%;
     width: 80%;
+    outline: none;
 }
-div.productNumber span.updown img{
+
+div.productNumber span.updown img {
     display: inline-block;
     vertical-align: top;
 }
-div.productNumber span.updown{
+
+div.productNumber span.updown {
     display: block;
     width: 20px;
     height: 14px;
-    border:1px solid #999999;
+    border: 1px solid #999999;
     text-align: center;
     padding-top: 4px;
 }
-div.productNumber span.updownMiddle{
+
+div.productNumber span.updownMiddle {
     height: 4px;
     display: block;
 }
-div.productNumber span.arrow{
+
+div.productNumber span.arrow {
     display: inline-block;
     width: 22px;
     height: 32px;
     vertical-align: top;
 }
+
 div.serviceCommitment {
-    margin:20px 0;
+    margin: 20px 0;
 }
-div.serviceCommitment span.serviceCommitmentDesc{
+
+div.serviceCommitment span.serviceCommitmentDesc {
     color: #999999;
 }
-div.serviceCommitment span.serviceCommitmentLink a{
+
+div.serviceCommitment span.serviceCommitmentLink a {
     color: #666666;
 }
-div.buyDiv{
-    margin:20px auto;
+
+div.buyDiv {
+    margin: 20px auto;
     text-align: center;
 }
-div.buyDiv button{
+
+div.buyDiv button {
     display: inline-block;
-    margin:0 10px;
+    margin: 0 10px;
     width: 180px;
     height: 40px;
 }
-div.buyDiv button.buyButton{
+
+div.buyDiv button.buyButton {
     border: 1px solid #C40000;
     background-color: #ffeded;
     line-height: 40px;
     font-size: 16px;
     color: #C40000;
 }
-div.buyDiv button.addCartButton{
+
+div.buyDiv button.addCartButton {
     border: 1px solid #C40000;
     background-color: #c40000;
     text-align: center;
@@ -182,17 +203,21 @@ div.buyDiv button.addCartButton{
     font-size: 16px;
     line-height: 40px;
 }
-div.buyDiv button.addCartButton{
+
+div.buyDiv button.addCartButton {
     font-size: 12px;
     margin-right: 8px;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
 }
-.redColor{
+
+.redColor {
     color: #C40000;
 }
-.boldWord{
+
+.boldWord {
     font-weight: bold;
     margin-right: 8px;
 }

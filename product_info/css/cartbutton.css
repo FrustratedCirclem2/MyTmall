@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+div.cartDiv {
+    max-width: 1013px;
+    margin: 10px auto;
+    color: #000;
+}
+
+div.cartTitle button {
+    background-color: #aaaaaa;
+    border: 1px solid #aaaaaa;
+    color: #fff;
+    width: 53px;
+    height: 25px;
+    border-radius: 2px;
+}
+
+div.cartTitle span.cartTitlePrice {
+    color: #C40000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+div.cartFoot {
+    background-color: #e5e5e5;
+    line-height: 50px;
+    margin: 20px 0;
+    padding-left: 20px;
+    color: #000;
+}
+
+div.cartFoot button {
+    background-color: #aaaaaa;
+    border: none;
+    color: #fff;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+img.cartProductItemIfSelected, img.selectAllItem {
+    cursor: pointer;
+}
+
+span.cartSumNumber {
+    color: #C40000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+span.cartSumPrice {
+    color: #C40000;
+    font-weight: bold;
+    font-size: 20px;
+}

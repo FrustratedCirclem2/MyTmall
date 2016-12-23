@@ -11,11 +11,13 @@
 <body>
 <div class="imgAndInfo">
     <div class="imgInImgAndInfo">
-        <img width="100px" src="../img/8619.jpg" alt="">
+        <img width="100px" src="../img/8619b.jpg" alt="">
     </div>
 
     <div class="infoInImgAndInfo">
-        <div class="productTitle">名媛2016新款女装夏两件套裤韩版雪纺七分裤阔腿裤休闲时尚套装女</div>
+        <div class="productTitle">名媛
+        2016
+        新款女装夏两件套裤韩版雪纺七分裤阔腿裤休闲时尚套装女</div>
         <div class="productSubTitle">高端定制 高档棉麻 现货即发 加购物车 领优惠卷</div>
 
         <div class="productPrice">
@@ -97,4 +99,36 @@
 
 </div>
 </body>
+<script>
+    $(function () {
+        var $increase = $('a.increaseNumber');
+        var $decrease = $('a.decreaseNumber');
+        var $input = $('input.productNumberSetting');
+        var stock = 66;
+
+        $increase.on('click', function () {
+            var num = parseInt($input.val());
+            if ((num + 1) <= stock) {
+                num += 1;
+                $input.val(num);
+            }
+        });
+
+        $decrease.on('click', function () {
+            var num = parseInt($input.val());
+            if ((num - 1) > 0) {
+                num -= 1;
+                $input.val(num);
+            }
+        });
+
+        $input.on('keyup',function () {
+            var num = parseInt($input.val());
+            if(isNaN(num)) num = 1;
+            if(num > stock) num = stock;
+            if(num <= 0) num = 1;
+            $input.val(num);
+        })
+    })
+</script>
 </html>

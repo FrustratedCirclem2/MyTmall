@@ -11,16 +11,40 @@
 <body>
 <div class="imgAndInfo">
     <div class="imgInImgAndInfo">
-        <img width="100px" src="../img/8619.jpg" alt="" class="bigImg">
+        <img width="100px" src="../img/8619b.jpg" alt="" class="bigImg">
         <div class="smallImageDiv">
-            <img class="smallImage" width="56px" src="../img/8620.jpg" alt="">
-            <img class="smallImage" width="56px" src="../img/8619.jpg" alt="">
-            <img class="smallImage" width="56px" src="../img/8618.jpg" alt="">
-            <img class="smallImage" width="56px" src="../img/8617.jpg" alt="">
-            <img class="smallImage" width="56px" src="../img/8616.jpg" alt="">
+            <img class="smallImage" width="56px" src="../img/8620.jpg" bigImageURL="../img/8620b.jpg" alt="">
+            <img class="smallImage" width="56px" src="../img/8619.jpg" bigImageURL="../img/8619b.jpg" alt="">
+            <img class="smallImage" width="56px" src="../img/8618.jpg" bigImageURL="../img/8618b.jpg" alt="">
+            <img class="smallImage" width="56px" src="../img/8617.jpg" bigImageURL="../img/8617b.jpg" alt="">
+            <img class="smallImage" width="56px" src="../img/8616.jpg" bigImageURL="../img/8616b.jpg" alt="">
         </div>
+        <div class="img4load hidden"></div>
     </div>
     <div style="clear: both;"></div>
 </div>
 </body>
+<script>
+    $(function () {
+        $("img.smallImage").on('mouseenter',function(){
+            var bigImageURL = $(this).attr("bigImageURL");
+            $("img.bigImg").attr("src",bigImageURL);
+        });
+
+        /*$("img.bigImg").load(
+            function(){
+                $("img.smallImage").each(function(){
+                    var bigImageURL = $(this).attr("bigImageURL");
+                    var img = new Image();
+                    img.src = bigImageURL;
+
+                    img.onload = function(){
+                        console.log(bigImageURL);
+                        $("div.img4load").append($(img));
+                    };
+                });
+            }
+        );*/
+    })
+</script>
 </html>
