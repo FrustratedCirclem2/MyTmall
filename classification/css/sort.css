@@ -41,6 +41,7 @@ table.categorySortBarTable input {
     border: none;
     height: 15px;
     width: 50px;
+    outline: none;
 }
 
 table.categorySortBarTable td.priceMiddleColumn {

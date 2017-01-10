@@ -208,7 +208,7 @@
                 return;
             }
             num = parseInt(num);
-            console.log('num: ' + num);
+            /*console.log('num: ' + num);*/
             if (isNaN(num) || (num <= 0)) {
                 num = 1;
 
@@ -217,9 +217,9 @@
 
             var begin = $('input.beginPrice').val();
             var end = $('input.endPrice').val();
-            if (!isNaN(begin) && !isNaN(end)) {
-                console.log('beginPrice is' + begin + '\n');
-                console.log('endPrice is' + end + '\n');
+            if (!isNaN(begin) && !isNaN(end) && begin != '' && end != '') {
+               /* console.log('beginPrice is' + begin + '\n');
+                console.log('endPrice is' + end + '\n');*/
                 unit.hide();
                 unit.each(function () {
                     var price = parseInt($(this).attr('price'));
