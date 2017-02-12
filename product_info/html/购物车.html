@@ -219,9 +219,10 @@
                 price = price.replace(/￥/g, '');
                 sum += parseInt(price);
                 totalNumber += parseInt(num);
-            });
-            $('span.cartTitlePrice,span.cartSumPrice').text(formatMoney(sum));
-            $('span.cartSumNumber').text(totalNumber);
+            });console.log(formatMoney(sum));
+          $("span.cartSumPrice").html("￥"+formatMoney(sum));
+          $("span.cartTitlePrice").html("￥"+formatMoney(sum));
+          $("span.cartSumNumber").html(totalNumber);
         }
 
         //更新全选按钮状态

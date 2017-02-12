@@ -1,0 +1,125 @@
+div.boughtDiv {
+    max-width: 1013px;
+    margin: 10px auto;
+}
+
+table.orderListItemTable {
+    border: 2px solid #ececec;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+table.orderListItemTable:hover {
+    border-color: #aaa;
+}
+
+table.orderListItemTable td {
+    padding: 8px 10px;
+}
+
+tr.orderListItemFirstTR {
+    background-color: #f1f1f1;
+}
+
+div.orderItemWangWangGif {
+    display: inline-block;
+    position: relative;
+    left: 2px;
+    width: 67px;
+    height: 22px;
+    background: url("../img/wangwang.gif") no-repeat;
+}
+
+td.orderItemDeleteTD {
+    text-align: right;
+}
+
+span.orderListItemDelete {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #999;
+}
+
+div.orderListItemProductLinkOutDiv {
+    position: relative;
+    height: 80px;
+}
+
+div.orderListItemProductLinkInnerDiv {
+    position: absolute;
+    bottom: 0;
+}
+
+div.orderListItemProductOriginalPrice {
+    color: #999;
+    font-size: 14px;
+}
+
+div.orderListItemProductPrice {
+    color: #3c3c3c;
+    font-size: 14px;
+}
+
+td.orderListItemNumberTD {
+    text-align: center;
+}
+
+td.orderItemOrderInfoPartTD {
+    border: 1px solid #ececec;
+}
+
+span.orderListItemNumber {
+    color: #3c3c3c;
+}
+
+td.orderListItemProductRealPriceTD {
+    text-align: center;
+}
+
+div.orderListItemProductRealPrice {
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div.orderListItemPriceWithTransport {
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+td.orderListItemButtonTD {
+    text-align: center;
+}
+
+button.orderListItemReview {
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    color: #3C3C3C;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 2px;
+}
+button.orderListItemReview:hover{
+    color: #c40000;
+    border-color: #c40000;
+}
+button.orderListItemConfirm {
+    background-color: #66b6ff;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding:6px 12px;
+}
+button.orderListItemConfirm:hover{
+    background-color: #118adb;
+}
+a {
+    color: #999;
+}
+a:hover{
+    text-decoration: none;
+    color: #c40000;
+}
